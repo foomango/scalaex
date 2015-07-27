@@ -1,0 +1,2 @@
+# scalaex
+Exercise for scala.
