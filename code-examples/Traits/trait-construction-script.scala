@@ -25,3 +25,14 @@ println( "Creating C12:" )
 new C12
 println( "After Creating C12" )
 
+println( "Creating D12:" )
+class D12 extends Base12 {
+  println("  in D12: d = " + d)
+  val d = "D12"
+  println("  in D12: d = " + d)
+}
+new D12 with T1 with T2 {
+  println("in anonymous class")
+}
+println( "After Creating D12" )
+
