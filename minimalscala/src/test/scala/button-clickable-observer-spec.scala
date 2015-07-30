@@ -5,7 +5,7 @@ import org.scalatest._
 import observer._
 import ui.ButtonCountObserver
 
-object ButtonClickableObserverSpec extends FlatSpec with Matchers {
+class ButtonClickableObserverSpec extends FlatSpec with Matchers {
   "A Button Observer" should 
     "observe button clicks" in {
       val observableButton = new Button("Okay") with ObservableClicks

@@ -5,7 +5,7 @@ import org.scalatest._
 import observer._
 import ui.ButtonCountObserver
 
-object ButtonClickableObserverVetoableSpec extends FlatSpec with Matchers {
+class ButtonClickableObserverVetoableSpec extends FlatSpec with Matchers {
   "A Button Observer with Vetoable Clicks" should 
     "observe only the first button click" in {
       val observableButton = 
