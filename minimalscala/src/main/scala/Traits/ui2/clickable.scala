@@ -3,5 +3,6 @@
 package ui2
 
 trait Clickable {
+  println("Clickable is created.")
   def click()
 }
