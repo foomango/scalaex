@@ -7,5 +7,6 @@ import ui.Widget
 class Button(val label: String) extends Widget with Clickable {
   def click() = {
     // Logic to give the appearance of clicking a button...
+    println("Button is clicked.")
   }
 }

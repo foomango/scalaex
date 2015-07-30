@@ -8,6 +8,7 @@ trait VetoableClicks extends Clickable {
   private var count = 0
 
   abstract override def click() = {
+    println("VetoableClicks is clicked.")
     if (count < maxAllowed) {
       count += 1
       super.click()
