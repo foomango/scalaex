@@ -3,7 +3,7 @@
 def exceptionToLeft[T](f: => T): Either[java.lang.Throwable, T] = try {
   Right(f)
 } catch {
-  case ex => Left(ex)
+  case ex:Throwable => Left(ex)
 }
 
 def throwsOnOddInt(i: Int) = i % 2 match {
